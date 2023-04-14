@@ -74,3 +74,166 @@ body{
     color: rgba(255, 255, 255, .85);
     font-size: 16px;
   }
+
+  .fadeInLeft{
+    background-image: url(https://images.pexels.com/photos/4245826/pexels-photo-4245826.jpeg?cs=srgb&dl=pexels-riccardo-bertolo-4245826.jpg&fm=jpg);
+   -webkit-animation: fadeInLeft 1.2s both; /* Safari 4+ */
+   -moz-animation: fadeInLeft 1.2s both; /* Fx 5+ */
+   -o-animation: fadeInLeft 1.2s both; /* Opera 12+ */
+   animation: fadeInLeft 1.2s both; /* IE 10+, Fx 29+ */
+ } 
+ 
+ /* Safari 4+ */
+ @-webkit-keyframes fadeInLeft {
+   0% {
+       opacity: 0;
+       -webkit-transform: translateX(-50px);
+   }
+   100% {
+       opacity: 1;
+       -webkit-transform: translateX(0);
+   }
+ }
+ 
+ /* Fx 5+ */
+ @-moz-keyframes fadeInLeft {
+   0% {
+       opacity: 0;
+       -moz-transform: translateX(-50px);
+   }
+   100% {
+       opacity: 1;
+       -moz-transform: translateX(0);
+   }
+ }
+ 
+ /* Opera 12+ */
+ @-o-keyframes fadeInLeft {
+   0% {
+       opacity: 0;
+       -o-transform: translateX(-50px);
+   }
+   100% {
+       opacity: 1;
+       -o-transform: translateX(0);
+   }
+ }
+ 
+ /* IE 10+, Fx 29+ */
+ @keyframes fadeInLeft {
+   0% {
+       opacity: 0;
+       transform: translateX(-50px);
+   }
+   100% {
+       opacity: 1;
+       transform: translateX(0);
+   }
+ }
+ 
+ 
+ /* Fade in top */
+ .fadeInTop {
+    background-image: url(https://images.pexels.com/photos/414102/pexels-photo-414102.jpeg?cs=srgb&dl=pexels-pixabay-414102.jpg&fm=jpg);
+   -webkit-animation: fadeInTop 1.2s both; /* Safari 4+ */
+   -moz-animation: fadeInTop 1.2s both; /* Fx 5+ */
+   -o-animation: fadeInTop 1.2s both; /* Opera 12+ */
+   animation: fadeInTop 1.2s both; /* IE 10+, Fx 29+ */
+ } 
+ 
+ @-webkit-keyframes fadeInTop {
+   0% {
+       opacity: 0;
+       -webkit-transform: translateY(-50px);
+   }
+   100% {
+       opacity: 1;
+       -webkit-transform: translateY(0);
+   }
+ }
+ 
+ @-moz-keyframes fadeInTop {
+   0% {
+       opacity: 0;
+       -moz-transform: translateY(-50px);
+   }
+   100% {
+       opacity: 1;
+       -moz-transform: translateY(0);
+   }
+ }
+ 
+ @-o-keyframes fadeInTop {
+   0% {
+       opacity: 0;
+       -o-transform: translateY(-50px);
+   }
+   100% {
+       opacity: 1;
+       -o-transform: translateY(0);
+   }
+ }
+ 
+ @keyframes fadeInTop{
+   0% {
+       opacity: 0;
+       transform: translateY(-50px);
+   }
+   100% {
+       opacity: 1;
+       transform: translateY(0);
+   }
+ }
+ 
+ /* Fade in right */
+ .fadeInRight {
+    background-image: url(https://images.pexels.com/photos/753325/pexels-photo-753325.jpeg?cs=srgb&dl=pexels-julius-silver-753325.jpg&fm=jpg);
+   -webkit-animation: fadeInRight 1.2s both; /* Safari 4+ */
+   -moz-animation: fadeInRight 1.2s both; /* Fx 5+ */
+   -o-animation: fadeInRight 1.2s both; /* Opera 12+ */
+   animation: fadeInRight 1.2s both; /* IE 10+, Fx 29+ */
+ } 
+ 
+ @-webkit-keyframes fadeInRight {
+   0% {
+       opacity: 0;
+       -webkit-transform: translateX(50px);
+   }
+   100% {
+       opacity: 1;
+       -webkit-transform: translateX(0);
+   }
+ }
+ 
+ @-moz-keyframes fadeInRight {
+   0% {
+       opacity: 0;
+       -moz-transform: translateX(50px);
+   }
+   100% {
+       opacity: 1;
+       -moz-transform: translateX(0);
+   }
+ }
+ 
+ @-o-keyframes fadeInRight {
+   0% {
+       opacity: 0;
+       -o-transform: translateX(50px);
+   }
+   100% {
+       opacity: 1;
+       -o-transform: translateX(0);
+   }
+ }
+ 
+ @keyframes fadeInRight {
+   0% {
+       opacity: 0;
+       transform: translateX(50px);
+   }
+   100% {
+       opacity: 1;
+       transform: translateX(0);
+   }
+ }
