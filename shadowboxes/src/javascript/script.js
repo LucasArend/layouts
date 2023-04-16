@@ -24,14 +24,30 @@ const animationLeft = (entries) => {
          entry.target.classList.toggle("fadeInLeft", entry.isIntersecting);
     });
   };
+
+  const animationRight = (entries) => {
+    entries.forEach(entry => {
+         entry.target.classList.toggle("fadeInRight", entry.isIntersecting);
+    });
+  };
   
   const ObsLeft = new IntersectionObserver(animationLeft);
-  const obsOptions = {}; //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
-  
-  // Attach observer to every [data-inviewport] element:
-  const ELs_inViewport = document.querySelectorAll('.itemflex');
-  ELs_inViewport.forEach(EL => {
+  const Obsright = new IntersectionObserver(animationRight);
+  const obsOptions = {};
+
+
+  const ELs_inViewportLeft = document.querySelectorAll('.itemflexleft');
+  ELs_inViewportLeft.forEach(EL => {
             ObsLeft.observe(EL, obsOptions);
     
   });
   
+  const ELs_inViewport = document.querySelectorAll('.itemflexright');
+  ELs_inViewport.forEach(EL => {
+        Obsright.observe(EL, obsOptions);
+    
+  });
+
+  function myFunction() {
+    alert("I am an alert box!");
+  }

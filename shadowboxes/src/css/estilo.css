@@ -19,7 +19,7 @@ body{
  height: 250px;
 }
 
-.itemflex{
+.itemflexleft{
     background-color: rgb(37, 39, 39);
     width: 300px;
     height: 180px;
@@ -30,6 +30,16 @@ body{
     
 }
 
+.itemflexright{
+  background-color: rgb(37, 39, 39);
+  width: 300px;
+  height: 180px;
+  border-radius: 20px 10px;
+  box-shadow: 20px 10px 10px;
+  display: flex;
+  align-items: end;
+  
+}
 
 .divisoria{
     height: 100px;
@@ -64,7 +74,11 @@ body{
     float: inline-end;
   }
 
-  .itemflex:hover .overlay{
+  .itemflexleft:hover .overlay{
+    opacity: 1;
+  }
+
+  .itemflexright:hover .overlay{
     opacity: 1;
   }
   
@@ -76,7 +90,6 @@ body{
   }
 
   .fadeInLeft{
-    background-image: url(https://images.pexels.com/photos/4245826/pexels-photo-4245826.jpeg?cs=srgb&dl=pexels-riccardo-bertolo-4245826.jpg&fm=jpg);
    -webkit-animation: fadeInLeft 1.2s both; /* Safari 4+ */
    -moz-animation: fadeInLeft 1.2s both; /* Fx 5+ */
    -o-animation: fadeInLeft 1.2s both; /* Opera 12+ */
@@ -187,7 +200,6 @@ body{
  
  /* Fade in right */
  .fadeInRight {
-    background-image: url(https://images.pexels.com/photos/753325/pexels-photo-753325.jpeg?cs=srgb&dl=pexels-julius-silver-753325.jpg&fm=jpg);
    -webkit-animation: fadeInRight 1.2s both; /* Safari 4+ */
    -moz-animation: fadeInRight 1.2s both; /* Fx 5+ */
    -o-animation: fadeInRight 1.2s both; /* Opera 12+ */
