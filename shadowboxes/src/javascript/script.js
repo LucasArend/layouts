@@ -48,6 +48,11 @@ const animationLeft = (entries) => {
     
   });
 
-  function myFunction() {
-    alert("I am an alert box!");
-  }
+   function abrir(id) {
+    document.getElementById(id).style.display='block';
+};
+
+function fechar(id) {
+     document.getElementById(id).style.display='none';
+ };
+

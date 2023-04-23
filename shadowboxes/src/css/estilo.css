@@ -78,10 +78,52 @@ body{
     opacity: 1;
   }
 
+  .itemflexleft:hover{
+    opacity: 1;
+    box-shadow: 20px 10px 10px #000000, 0 0 40px #000000, 0 0 70px #000a0e;
+  }
+
   .itemflexright:hover .overlay{
     opacity: 1;
   }
+
+  .itemflexright:hover{
+    opacity: 1;
+    box-shadow: 20px 10px 10px #000000, 0 0 40px #000000, 0 0 70px #000a0e;
+  }
+
+
+  .popup{
+    position:absolute;
+    background: white;
+    width: 400px;
+    height: 400px;
+    border: solid 1px black;
+    padding: 15px;
+    display:none;
+    z-index: 99;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px 10px;
+  }
   
+  /* .link {
+    font-family: Helvetica;
+    font-weight: 900;
+    font-size: 16px;
+    background-color: transparent;
+    border: 0;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    width: 300px;
+    height: 60px;
+  } */
+
   .text {
     font-family: Helvetica;
     font-weight: 900;
