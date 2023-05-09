@@ -1,0 +1,176 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Isso foi adicionado depois da criação do vídeo apenas para repetir vários containers */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 50px;
+  padding: 50px;
+}
+
+/* Início do código descrito no vídeo */
+.container {
+  width: 100%;
+  height: 300px;
+  background: #dadada;
+  font-family: sans-serif;
+  font-size: 16px;
+  position: relative;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.label {
+  position: absolute;
+  top: 20px;
+  right: -16px;
+  padding: 5px 20px;
+  color: #fafafa;
+  background: teal;
+  font-weight: 700;
+  max-width: 70%; /* Ajustado para textos muito grandes */
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.label::after {
+  position: absolute;
+  content: '';
+  bottom: -6px;
+  right: 0;
+  border-style: solid;
+  border-top-width: 3px;
+  border-left-width: 8px;
+  border-bottom-width: 3px;
+  border-right-width: 8px;
+  border-top-color: teal;
+  border-left-color: teal;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  filter: brightness(50%);
+}
+/* Fim do código descrito no vídeo */
+
+/* Se quiser mudar a cor (essa classe depende de .label) */
+.label-cyan {
+  background: cyan;
+  color: #444;
+}
+
+.label-cyan::after {
+  border-top-color: cyan;
+  border-left-color: cyan;
+  filter: brightness(80%);
+}
+
+/* Se quiser mudar a cor (essa classe depende de .label) */
+.label-pink {
+  background: deeppink;
+  color: #fafafa;
+}
+
+.label-pink::after {
+  border-top-color: deeppink;
+  border-left-color: deeppink;
+  filter: brightness(50%);
+}
+
+/* Com conteúdo no container */
+.container-content {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.container-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container-content:hover .container-subtitle {
+  opacity: 1;
+}
+
+.container-subtitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  color: #f9f9f9;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 600ms ease-in-out;
+}
+
+.container-subtitle h2 {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.container-subtitle p {
+  margin: 0;
+}
+
+/* Na esquerda (essa classe depende de .label) */
+.label-left {
+  top: auto;
+  right: auto;
+  left: -16px;
+  bottom: 50px;
+}
+
+.label-left::after {
+  right: auto;
+  left: 0;
+  border-top-color: teal;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: teal;
+}
+
+/* Na esquerda e direita (essa classe NÃO DEPENDE de .label) */
+.label-both {
+  position: absolute;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+  top: 20px;
+  right: -16px;
+  left: -16px;
+  background: chartreuse;
+  color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.label-both::before, .label-both::after {
+  position: absolute;
+  content: '';
+  bottom: -6px;
+  border-style: solid;
+  border-top-width: 3px;
+  border-left-width: 8px;
+  border-bottom-width: 3px;
+  border-right-width: 8px;
+  filter: brightness(80%);
+}
+
+.label-both::after {
+  right: 0;
+  border-top-color: chartreuse;
+  border-left-color: chartreuse;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+.label-both::before {
+  left: 0;
+  border-top-color: chartreuse;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: chartreuse;  
+}
